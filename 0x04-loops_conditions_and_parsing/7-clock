@@ -6,7 +6,7 @@
 hour=0
 
 # Iterate from 0 to 11 for hours
-while [ $hour -lt 12 ]; do
+while [ $hour -le 12 ]; do
 	# Print the hour
 	echo "Hour: $hour"
 
