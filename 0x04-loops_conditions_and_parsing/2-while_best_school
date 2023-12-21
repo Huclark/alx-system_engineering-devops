@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script displays `Best School` ten times
+
+# Use a while loop to print `Best School` to stdout
+# First declare and initialize a variable for the loop
+i=0
+
+while [ $i -lt 10 ]; do
+	echo "Best School"
+	((i++))
+done
