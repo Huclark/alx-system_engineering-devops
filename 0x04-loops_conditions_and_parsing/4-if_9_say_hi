@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script displays `Best School` 10 times
+# But for the 9th iteration, displays `Best School` and
+# then `Hi` on a new line.
+
+# Initialize counter for the loop
+i=0
+
+while [ $i -lt 10 ]; do
+	if [ $i -eq 8 ]; then
+		printf "Best School\nHi\n"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
