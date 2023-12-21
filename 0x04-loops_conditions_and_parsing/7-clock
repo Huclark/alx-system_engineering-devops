@@ -14,7 +14,7 @@ while [ $hour -lt 12 ]; do
 	minute=1
 
 	# Iterate from 1 to 59 for minutes
-	while [ $minute -lt 59 ]; do
+	while [ $minute -le 59 ]; do
 		echo $minute
 		((minute++))
 	done
