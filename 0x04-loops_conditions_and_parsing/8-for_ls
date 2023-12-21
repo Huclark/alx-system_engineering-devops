@@ -3,8 +3,9 @@
 # in a list format
 # where only the part of the name after the first dash is diaplayed
 
+# Iterate over all contents in the directory
 for file in *; do
-	# Ensure all directories are ignored
+	# Ensure all directories are ignored and only files are considered
 	if [ -f "$file" ]; then
 		# Extract the part of the name after the first dash
 		name_after_dash=$(echo "$file" | cut -d '-' -f2-)
