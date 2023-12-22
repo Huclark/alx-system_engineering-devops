@@ -5,17 +5,22 @@
 # It displays `Buzz` when the number is a multiple of 5
 # Otherwise the number itself is displayed
 
+# iterate over 1 to 100
 for ((i=1; i<=100; i++))
 do
+	# check for multiples of only 3
 	if [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -ne 0 ]
 	then
 		echo "Fizz"
+	#check for multiples of only 5
 	elif [ $((i % 5)) -eq 0 ] && [ $((i % 3)) -ne 0 ]
 	then
 		echo "Buzz"
+	# check for multiples of 3 and 5
 	elif [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -eq 0 ]
 	then
 		echo "FizzBuzz"
+	# print number if not a multiple of 3 and 5
 	else
 		echo $i
 	fi
