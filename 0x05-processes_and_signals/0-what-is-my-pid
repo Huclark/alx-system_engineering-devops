@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays its own PID
+
+# Get the PID of the current script using ps
+ps -o pid= -p $$ | tr -d '[:space:]' ; echo
