@@ -11,7 +11,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 	- [What is a LAN](#what-is-a-lan)
 	- [What is a WAN](#what-is-a-wan)
 	- [What is the Internet](#what-is-the-internet)
-	- [TCP/UDP](#tcp/ucp)
+	- [TCP/UDP](#tcpudp)
   - [Requirements](#requirements)
 - [My process](#my-process)
   - [Built with](#built-with)
