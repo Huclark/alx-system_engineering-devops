@@ -50,7 +50,7 @@ At the end of this project I am expected to [explain to anyone](https://fs.blog/
 
 - What is an IP address
 - What are the 2 types of IP address
-- What is localhost
+- What is `localhost`
 - What is a subnet
 - Why IPv6 was created
 
@@ -71,7 +71,8 @@ At the end of this project I am expected to [explain to anyone](https://fs.blog/
 - **Mandatory README**: A `README.md` file, at the root of the folder of the project, is mandatory
 - **Code Style**: Your Bash script must pass `Shellcheck` (version `0.7.0`) without any error
 - **Executable Files**: All your Bash script files must be executable
-- **Documentation Standards**: The second line of all your Bash scripts should be a comment explaining what is the script doing
+- **Documentation Standards**: The second line of all your Bash scripts should be a comment explaining what is the script doing.
+For multiple choice question type tasks, just type the number of the correct answer in your answer file, add a new line for every new answer
 
 ## My process
 
