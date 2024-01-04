@@ -45,7 +45,12 @@
 
 ### What I learned
 
-
+> - Configuring a UBUNTU server by updating the system's `/etc/hosts` file.
+> - Displaying all active IP addresses on the machine using the `ifconfig` or `ip addr show`.
+> - Listening to a specified IP address on a specific port using `nc` and `telnet`.
+> - `localhost` or `127.0.0.1` is the loopback address of the device you are working on.
+> - `0.0.0.0` is a special IP address which can be used to listen to all available network interfaces on a computer.
+> - `/etc/hosts` is a system file which contains the IP addresses with their hostnames
 
 ## Author
 
