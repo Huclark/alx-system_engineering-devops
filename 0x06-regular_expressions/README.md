@@ -15,30 +15,37 @@
 
 ## About
 
-This is a solution to the [ALX](https://www.alxafrica.com/) project on Regular Expressions.
+> This is a solution to the [ALX](https://www.alxafrica.com/) project on Regular Expressions.
 
 ## Overview
 
 ### Requirements
 
-- **Allowed editors**: `vi`, `vim`, `emacs`.
-- **Interpretation/Compilation Environment**: All your files will be interpreted on Ubuntu 20.04 LTS
-- **New Line Requirement**: All your files should end with a new line
-- **Shebang Line Requirement**: The first line of all your files should be exactly `#!/usr/bin/env ruby`
-- **Mandatory README**: A `README.md` file, at the root of the folder of the project, is mandatory
-- **Executable Files**: All your Bash script files must be executable
-- **Oniguruma Library**: All your regex must be built for the Oniguruma library
+- **Allowed editors**:
+> `vi`, `vim`, `emacs`.
+- **Interpretation/Compilation Environment**: 
+> All your files will be interpreted on Ubuntu 20.04 LTS
+- **New Line Requirement**:
+> All your files should end with a new line
+- **Shebang Line Requirement**:
+> The first line of all your files should be exactly `#!/usr/bin/env ruby`
+- **Mandatory README**:
+> A `README.md` file, at the root of the folder of the project, is mandatory
+- **Executable Files**:
+> All your Bash script files must be executable
+- **Oniguruma Library**:
+> All your regex must be built for the Oniguruma library
 
 ## My process
 
 ### Built with
 
-- Ruby scripts
-- Unix commands
+> - Ruby scripts
+> - Unix commands
 
 ### What I learned
 
-This project enhance my understanding on what regular expressions are and how to implement some expressions like
+> This project enhanced my understanding on what regular expressions are and how to implement some expressions like
 
 ```ruby
 \d # to match any digit
@@ -51,9 +58,9 @@ This project enhance my understanding on what regular expressions are and how to
 
 ### Useful resources
 
-- [RegexOne](https://regexone.com/) - This helped me to learn Regular Expressions with simple and interactive exercises. I'd recommend it to anyone still learning this concept.
+> - [RegexOne](https://regexone.com/) - This site helped me to learn Regular Expressions with simple and interactive exercises. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Email - vhuclark@gmail.com
-- Twitter - [@huclark\_](https://www.twitter.com/huclark_)
+> - Email - vhuclark@gmail.com
+> - Twitter - [@huclark\_](https://www.twitter.com/huclark_)
