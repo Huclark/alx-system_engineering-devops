@@ -21,20 +21,13 @@
 
 ### Requirements
 
-- **Allowed editors**:
-> `vi`, `vim`, `emacs`.
-- **Interpretation/Compilation Environment**: 
-> All your files will be interpreted on Ubuntu 20.04 LTS
-- **New Line Requirement**:
-> All your files should end with a new line
-- **Shebang Line Requirement**:
-> The first line of all your files should be exactly `#!/usr/bin/env ruby`
-- **Mandatory README**:
-> A `README.md` file, at the root of the folder of the project, is mandatory
-- **Executable Files**:
-> All your Bash script files must be executable
-- **Oniguruma Library**:
-> All your regex must be built for the Oniguruma library
+> - **Allowed editors**: `vi`, `vim`, `emacs`.
+> - **Interpretation/Compilation Environment**: All your files will be interpreted on Ubuntu 20.04 LTS
+> - **New Line Requirement**: All your files should end with a new line
+> - **Shebang Line Requirement**: The first line of all your files should be exactly `#!/usr/bin/env ruby`
+> - **Mandatory README**: A `README.md` file, at the root of the folder of the project, is mandatory
+> - **Executable Files**: All your Bash script files must be executable
+> - **Oniguruma Library**: All your regex must be built for the Oniguruma library
 
 ## My process
 
