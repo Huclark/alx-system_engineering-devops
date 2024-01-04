@@ -81,7 +81,7 @@ For multiple choice question type tasks, just type the number of the correct ans
 
 > - The OSI model is a conceptual model that characterizes the communication functions of a telecommunication network without regard to their underlying internal structure. It is organised into 7 layers with physical layers and application layers being the lowest and highest levels, respectively.
 
-> - LAN is a network of computers withing a local environment while WAN is a connection of LAN
+> - LAN is a network of computers withing a local environment while WAN is a connection of LANs
 
 > - IP addresses are like phone numbers or postal addresses for each computer device participating in a computer network while MAC addresses are unique identifiers of a network interface.
 
