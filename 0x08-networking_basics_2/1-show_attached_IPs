@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script displays all active IPv4 IPs on
+# the machine it's executed on.
+
+# Use `ip -4 addr show` to display all IPv4 addresses
+# Pipe result to awk to filter and print out the IP addresses
+# Pip the output to cut to remove the `/` character to only
+# display the IP address to standard output
+
+ip -4 addr show | awk '/inet / {print $2}' | cut -d'/' -f1
