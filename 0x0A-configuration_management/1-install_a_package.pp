@@ -1,6 +1,6 @@
 # Ensure python3.8 is installed
 package { 'python3.8':
-  ensure => installed,
+  ensure => 'installed',
 }
 
 # Install flask from pip3
