@@ -4,4 +4,4 @@
 # and password: betty
 # and number of bits: 4096
 
-ssh-keygen -t rsa -b 4096 -f school -N "betty"
+ssh-keygen -t rsa -b 4096 -f school -N betty
