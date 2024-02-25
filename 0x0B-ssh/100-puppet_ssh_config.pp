@@ -1,7 +1,16 @@
-# This puppet code updates the ssh configuration to 
-# use the private key ~/.ssh/school without any authentication
+# Setting up client SSH configuration
+include stdlib
 
-file { '/etc/ssh/ssh_config':
-  ensure  => 'present',
-  content => 'IdentityFile ~/.ssh/school\nPasswordAuthentication no\n'
+file_line { 'Turn off passwd auth':
+  ensure  => present,
+  path    => '/etc/ssh/ssh_config',
+  line    => 'PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { 'Delare identity file':
+  ensure  => present,
+  path    => '/etc/ssh/ssh_config',
+  line    => 'IdentityFile ~/.ssh/school',
+  replace => true,
 }
