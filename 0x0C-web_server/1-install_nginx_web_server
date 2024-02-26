@@ -2,14 +2,14 @@
 # This script installs nginx
 
 # Install Nginx
-apt-get update -y
-apt-get -y install nginx
+apt update -y
+apt -y install nginx
 
 # Ensure Nginx is listening on port 80
 ufw allow 'Nginx HTTP'
 
 # Add "Hello, world!" to the html file
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
 # restart nginx
 service nginx start
