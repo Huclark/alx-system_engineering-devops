@@ -2,7 +2,7 @@
 # This script installs nginx
 
 # Install Nginx
-apt-get update
+apt-get update -y
 apt-get -y install nginx
 
 # Ensure Nginx is listening on port 80
