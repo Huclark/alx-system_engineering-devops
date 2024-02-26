@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script installs nginx
+
+# Install Nginx
+apt-get update
+apt-get -y install nginx
+
+# Ensure Nginx is listening on port 80
+ufw allow 'Nginx HTTP'
+
+# Add "Hello, world!" to the html file
+echo "Hello, world!" | tee /var/www/html/index
+
+# restart nginx
+service nginx restart
