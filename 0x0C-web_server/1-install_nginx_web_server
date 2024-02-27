@@ -11,7 +11,10 @@ apt -y install nginx
 ufw allow 'Nginx HTTP'
 
 # Add "Hello, world!" to the html file
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+echo 'Hello World!' >/var/www/html/index.nginx-debian.html
+
+# make index.nginx-debian.html as the first file in the index directive
+sed -i 's/index.html index.htm;/index.nginx-debian.html index.html index.htm;/' /etc/nginx/sites-available/default
 
 # restart nginx
 /etc/init.d/nginx reload
