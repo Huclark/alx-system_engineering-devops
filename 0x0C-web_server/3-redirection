@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# This script configures a Nginx server so that /redirect_me
+# is redirecting to another page
+
+# store configuration in a variable
+config="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/huclark permanent;"
+
+# Run script with sudo powers
+sudo su <<delim
+
+# update apps
+apt-get -y update
+
+# install nginx
+apt-get -y install nginx
+
+# make nginx listen on port 80
+ufw allow 'Nginx HTTP'
+
+echo "Hello World!" > /var/www/html/index.html;
+
+# configure redirection
+sed -i "s/server_name _;/$config/" /etc/nginx/sites-enabled/default
+
+# reload nginx
+service nginx restart
+
+delim

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that configures nginx on a new Ubuntu machine
 
+# Run script with sudo powers
 sudo su <<delimiter
 
 # carry a system update
