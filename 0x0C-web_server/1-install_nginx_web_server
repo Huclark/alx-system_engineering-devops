@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 # This script installs nginx
 
+# run with root powers
+sudo su <<EOF
+
 # carry a system update
-apt update -y
+apt-get update -y
 
 # Install Nginx
-apt -y install nginx
+apt-get -y install nginx
 
 # Ensure Nginx is listening on port 80
 ufw allow 'Nginx HTTP'
+
+# start nginx
+service nginx start
 
 # Add "Hello, world!" to the html file
 echo 'Hello World!' >/var/www/html/index
@@ -16,5 +22,4 @@ echo 'Hello World!' >/var/www/html/index
 # make index.nginx-debian.html as the first file in the index directive
 # sed -i 's/index.html index.htm;/index.nginx-debian.html index.html index.htm;/' /etc/nginx/sites-available/default
 
-# restart nginx
-/etc/init.d/nginx reload
+EOF
