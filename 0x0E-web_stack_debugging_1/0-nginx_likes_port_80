@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# remove the default file in sites-enabled
-sudo rm /etc/nginx/sites-enabled/default
+# web stack debugging
 # correct the symbolic link
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default;
 # start service
 sudo service nginx restart
