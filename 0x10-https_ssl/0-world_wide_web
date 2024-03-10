@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# configuring my domain zone so that the subdomain www points to
+# my load balancer IP(lb-01).
+
+# Function to display subdomain information
+display_info() {
+	# Run the dig command to query the DNS records for the specified subdomain and domain
+	# Use grep to filter the output to the ANSWER SECTION
+	# Replace the tab spaces with newlines
+	# Get the last 2 lines of output(the DNS record and the IP address)
+	# replace newlines with spaces
+	dns_query=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+	# concantenate the subdomain and DNS record information
+	# Use awk to print the subdomain, record type and IP address
+	echo "$2 $dns_query" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+}
+
+# if the number of arguments passed to script is 2, call display_info
+# function with the provided domain and subdomain
+if [ "$#" -eq 2 ];
+then
+	display_info "$1" "$2"
+else
+# if the arguments are not exactly 2
+	# define an array containing the subdomains to audit
+	subdomains=("www" "lb-01" "web-01" "web-02")
+	for subdomain in "${subdomains[@]}";
+	do
+		# call the display_info function for each subdomain, passing the provided
+		# domain and the current subdomain
+		display_info "$1" "$subdomain"
+	done
+fi
