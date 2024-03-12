@@ -7,10 +7,10 @@ sudo apt-get -y install haproxy
 sudo service haproxy start
 
 # Configure HAproxy so that it send traffic to web-01 and web-02 using roundrobin
-server1=$"492915-web-01"
-server1_ip=$"54.157.167.117"
-server2=$"492915-web-02"
-server2_ip=$"54.160.75.58"
+server1=$"490829-web-01"
+server1_ip=$"52.87.254.150"
+server2=$"490829-web-02"
+server2_ip=$"52.86.39.247"
 
 frontend_configuration=$"frontend http_front
     bind *:80
