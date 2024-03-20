@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-# Backups mysql into dated tar file
-sudo mysqldump -u root -p "$1" --all-databases > backup.sql
-tar -zcvf "$(date '+%d-%m-%Y').tar.gz" backup.sql
+# Backs up all databases and converts to a tar.gz archive
+if [ $# -gt 0 ]; then
+    sudo mysqldump -u root -p"$1" --all-databases | sudo tee backup.sql
+    sudo tar -czvf '$(date +"%d-%m-%Y").tar.gz' backup.sql
+else
+    echo "USAGE: ./5-mysql_backup <password>"
+fi
