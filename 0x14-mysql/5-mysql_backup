@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # Backups mysql into dated tar file
-if [ $# -ne 1 ]; then
-	echo "Usage: $0 <MySQL root password>"
-	exit 1
-fi
 sudo mysqldump -u root -p "$1" --all-databases > backup.sql
 tar -zcvf "$(date '+%d-%m-%Y').tar.gz" backup.sql
