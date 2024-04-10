@@ -3,8 +3,9 @@
 Module
 """
 import json
-import requests
 import sys
+import requests
+
 
 if len(sys.argv) == 2:
     url = f'https://jsonplaceholder.typicode.com/users/{sys.argv[1]}'
@@ -20,14 +21,14 @@ if len(sys.argv) == 2:
     except json.JSONDecodeError:
         print('Not a valid JSON!')
 
-    tasks = 0
-    titles = ''
-    done_tasks = 0
+    TASKS = 0
+    TITLES = ''
+    DONE_TASKS = 0
     for data in json_data:
         if data.get('completed') is True:
-            titles = titles + '\t ' + data['title'] + '\n'
-            done_tasks += 1
-        tasks += 1
+            TITLES = TITLES + '\t ' + data['title'] + '\n'
+            DONE_TASKS += 1
+        TASKS += 1
 
     print(f"Employee {employee_name} is done with "
-          f"tasks({done_tasks}/{tasks}):\n{titles}", end='')
+          f"tasks({DONE_TASKS}/{TASKS}):\n{TITLES}", end='')
